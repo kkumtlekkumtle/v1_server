@@ -12,5 +12,19 @@
     "mysql2": "^3.6.0",
     "nodemon": "^3.0.1",
     "sequelize": "^6.32.1"
-  }
+  },
+  "name": "v1_server",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkumtlekkumtle/v1_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkumtlekkumtle/v1_server/issues"
+  },
+  "homepage": "https://github.com/kkumtlekkumtle/v1_server#readme",
+  "description": ""
 }

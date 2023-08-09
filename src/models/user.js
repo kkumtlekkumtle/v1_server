@@ -2,7 +2,7 @@ module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
     "user",
     {
-      userId: {
+      userId  : {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -25,4 +25,5 @@ module.exports = (sequelize, DataTypes) => {
       timestamps: false,
     }
   );
+  return User;
 };
