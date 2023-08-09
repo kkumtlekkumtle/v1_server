@@ -1,19 +1,20 @@
 module.exports = (sequelize, DataTypes) => {
-  const Keywords = sequelize.define(
-    "keywords",
+  const Points = sequelize.define(
+    "points",
     {
-      boardId: {
+      id: {
         type: DataTypes.INTEGER,
+        primaryKey: true,
       },
-      keyword: {
-        type: DataTypes.STRING,
+      point: {
+        type: DataTypes.INTEGER,
         allowNull: false,
       },
     },
     {
-      tableName: "keywords",
+      tableName: "points",
       timestamps: false,
     }
   );
-  return Keywords;
+  return Points;
 };

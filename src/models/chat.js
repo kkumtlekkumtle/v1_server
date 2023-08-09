@@ -1,36 +1,30 @@
 module.exports = (sequelize, DataTypes) => {
-  const Board = sequelize.define(
-    "board",
+  const Chat = sequelize.define(
+    "chat",
     {
-      userId: {
+      boardId: {
         type: DataTypes.INTEGER,
-        allowNull: false,
       },
-      id: {
+      chatId: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true,
       },
-      title: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      keyword: {
-        type: DataTypes.STRING,
-      },
       description: {
         type: DataTypes.STRING,
       },
-      views: {
-        type: DataTypes.INTEGER,
-        defaultValue: 0,
+      name: {
+        type: DataTypes.STRING,
+      },
+      date: {
+        type: DataTypes.STRING,
       },
     },
     {
-      tableName: "board",
+      tableName: "chat",
       timestamps: false,
     }
   );
-  return Board;
+  return Chat;
 };
